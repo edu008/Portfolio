@@ -11,11 +11,11 @@ const about = () => {
                 <span className='text-white font-poppins text-xs md:text-xs font-normal md:font-medium relative md:-left-0 -left-1 md:-top-0 -top-1 md:pb-0 pb-2 md:pt-0'>About me</span>
             </div>
             <div className='md:pt-5'>
-                <h1 className='md:text-5xl text-4xl md:font-medium font-semibold'>DevOps <br className='md:hidden'/><span className='bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent md:w-48'>Developer </span><br/> <span className='md:text-4xl text-3xl font-poppins font-normal md:font-medium'>Based In India.</span></h1>
+                <h1 className='md:text-5xl text-4xl md:font-medium font-semibold'>Eduan <br className='md:hidden'/><span className='bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent md:w-48'>Roci </span><br/> <span className='md:text-4xl text-3xl font-poppins font-normal md:font-medium'>Based In Switzerland.</span></h1>
                 <hr className='md:w-44 w-32 md:mb-0 mb-4 h-3 mt-3 md:ml-0 lg:mt-4 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
             </div>
             <div className='md:w-12/12 md:mt-10 '>
-                <h1 className='font-poppins text-justify'>I am a DevOps Developer from Kolkata, India. Currently with a year of experience, I put my time learning essentials from other fields as well. I am very comfortable with adapting to new software and new technologies. With a strong passion for innovation and a keen eye for detail, I'm confident in my ability to collaborate with cross-functional teams, drive projects forward, and deliver high-quality results. </h1>
+                <h1 className='font-poppins text-justify'>I am a engineer enthusiast from Bern, Switzerland, with a strong passion for coding in Python and building automations. Currently completing my Bachelor's in Business Informatics, I bring a unique approach to problem-solving and a drive for continuous learning. My experience spans IT support and self-taught technologies, enabling me to adapt quickly to new challenges. With an eye for innovation and efficiency, I'm eager to collaborate with dynamic teams to create impactful, high-quality solutions.</h1>
             </div>
         </div>
         <div className='relative md:-left-0 -left-28 md:pt-4 pt-12'>
@@ -23,13 +23,15 @@ const about = () => {
                 <h1 className='text-3xl font-poppins font-medium md:ml-10'>Languages</h1>
                 <hr className='md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
                 <h1 className='md:mt-5 mt-3 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12  text-xl pl-4'>English</span></h1>
-                <h1 className='md:mt-2 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Hindi</span></h1>
-                <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Bengali</span></h1>
+                <h1 className='md:mt-2 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>German</span></h1>
+                <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Albanian</span></h1>
+                <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>French</span></h1>
+
             </div>
             <div className='md:mt-3'>
                 <h1 className='text-3xl font-poppins font-medium md:ml-10 md:mt-0 mt-5'>Nationality</h1>
                 <hr className='md:w-64 w-32 md:mb-0 mb-4 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
-                <h1 className='md:mt-4 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Indian</span></h1>
+                <h1 className='md:mt-4 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Swiss</span></h1>
             </div>
             <div className='md:mt-4'>
                 <h1 className='text-3xl font-poppins font-medium md:ml-10 md:mt-0 mt-5'>Hobbies</h1>

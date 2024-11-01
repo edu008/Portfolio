@@ -26,7 +26,7 @@ const skills = () => {
             </div>
             <div>
                 <div className='md:w-full md:h-12 md:mt-10'>
-                    <h1 className='md:font-semibold font-bold md:text-2xl md:pt-1.5 md:inline-block md:mr-5 md:mb-0 mb-1'>DevOps</h1>
+                    <h1 className='md:font-semibold font-bold md:text-2xl md:pt-1.5 md:inline-block md:mr-5 md:mb-0 mb-1'>Eduan</h1>
                     <img src={docker} alt="docker" style={{ width: 40, height: 40 }} className='inline md:pb-3 mr-2 md:mr-2'/>
                     <img src={k8s} alt="k8s" style={{ width: 40, height: 40 }} className='inline md:pb-1 md:mr-2 mr-2 relative md:-top-1.5'/>
                     <img src={bash} alt="bash" style={{ width: 40, height: 40 }} className='inline md:pb-1 md:mb-3 mr-2 md:mr-2'/>
