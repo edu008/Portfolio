@@ -25,17 +25,14 @@ const content = () => {
          </h1>
       </div>
       <div className="flex md:p-6 pt-4 space-x-2.5 w-full md:pt-8 md:pb-8">
-        <a className='pl-2 h-10 w-10 text-center border pt-2 rounded-md border-black hover:bg-[#c580f023] transition-all duration-500 active:bg-zinc-300' href="https://www.twitter.com/marshdit">
+        <a className='pl-2 h-10 w-10 text-center border pt-2 rounded-md border-black hover:bg-[#c580f023] transition-all duration-500 active:bg-zinc-300' href="https://www.twitter.com/eduuaan">
           <FaXTwitter size={23} />
         </a>
-        <a className='pl-2 h-10 w-10 text-center border pt-2 rounded-md border-black hover:bg-[#c580f023] transition-all duration-500 active:bg-zinc-300' href="https://www.linkedin.com/in/Eduan-Roci-kiit">
+        <a className='pl-2 h-10 w-10 text-center border pt-2 rounded-md border-black hover:bg-[#c580f023] transition-all duration-500 active:bg-zinc-300' href="https://www.linkedin.com/in/eduan-roci-741b27211/">
           <LuLinkedin size={23} />
         </a>
-        <a className='pl-2 h-10 w-10 text-center border pt-2 rounded-md border-black hover:bg-[#c580f023] transition-all duration-500 active:bg-zinc-300' href="https://www.instagram.com/anxit_dxy/">
+        <a className='pl-2 h-10 w-10 text-center border pt-2 rounded-md border-black hover:bg-[#c580f023] transition-all duration-500 active:bg-zinc-300' href="https://www.instagram.com/Eduanroci/">
           <LuInstagram size={23} />
-        </a>
-        <a className='pl-2 h-10 w-10 text-center border pt-2 rounded-md border-black hover:bg-[#c580f023] transition-all duration-500 active:bg-zinc-300' href="https://mastodon.social/@Eduan_Roci">
-          <PiMastodonLogoBold size={23} />
         </a>
       </div>
       <div>
