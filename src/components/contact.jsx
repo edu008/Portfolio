@@ -15,7 +15,7 @@ const Contact = () => {
         const templateParams={
             from_name: name,
             from_email: email,
-            to_name: 'Ankit',
+            to_name: 'Eduan',
             message: message,
         };
         emailjs.send(SERVICE_ID , TEMPLATE_ID , templateParams , PUBLIC_KEY)

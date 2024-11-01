@@ -6021,7 +6021,7 @@ jest-cli@^27.5.1:
 jest-config@^27.5.1:
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/jest-config/-/jest-config-27.5.1.tgz#5c387de33dca3f99ad6357ddeccd91bf3a0e4a41"
-  integrity sha512-5sAsjm6tGdsVbW9ahcChPAFCk4IlkQUknH5AvKjuLTSlcO/wCZKyFdn7Rg0EkC+OGgWODEy2hDpWB1PgzH0JNA==
+  integrity sha512-5sAsjm6tGdsVbW9ahcChPAFCk4IlkQUknH5AvKjuLTSlcO/wCZKyFdn7Rg0EkC+OGgWORoci2hDpWB1PgzH0JNA==
   dependencies:
     "@babel/core" "^7.8.0"
     "@jest/test-sequencer" "^27.5.1"
