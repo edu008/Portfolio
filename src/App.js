@@ -6,6 +6,8 @@ import { BrowserRouter, Route,Link,Routes } from 'react-router-dom'
 import About from "./components/about";
 import Skills from "./components/skills"
 import Contact from "./components/contact";
+import Feedback from "./components/feedback";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path='/about' Component={About} />
         <Route path='/skills' Component={Skills} />
         <Route path='/contact' Component={Contact} />
+        <Route path='/feedback' Component={Feedback} />
       </Routes>
       </BrowserRouter>
         

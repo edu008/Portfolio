@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { LuHome,LuUser,LuLightbulb,LuLayers, LuPhone,LuMenu } from "react-icons/lu";
+import { LuHome,LuUser,LuLightbulb,LuLayers, LuPhone,LuMenu,LuHeart   } from "react-icons/lu";
 import { IoIosClose } from "react-icons/io";
 import {Divide as Hamburger} from 'hamburger-react'
 
@@ -21,6 +21,9 @@ const Navbar = () => {
             <a href='/skills' className='mt-1 w-9 h-9 pl-1 rounded-full hover:border-spacing-0 hover:scale-110 hover:translate-y-px hover:border-black hover:bg-[#c580f03c] transition-all duration-500'>
                 <LuLightbulb size={24} className='relative top-1.5 left-0.5'/>
             </a>
+            <a href='/feedback' className='mt-1 w-9 h-9 pl-1 rounded-full hover:border-spacing-0 hover:scale-110 hover:translate-y-px hover:border-black hover:bg-[#c580f03c] transition-all duration-500'>
+                <LuHeart   size={24} className='relative top-1.5 left-0.5'/>
+            </a>
             <a href='/contact' className='mt-1 w-9 h-9 pl-1 rounded-full hover:border-spacing-0 hover:scale-110 hover:translate-y-px hover:border-black hover:bg-[#c580f03c] transition-all duration-500'>
                 <LuPhone size={24} className='relative top-1.5 left-0.5'/>
             </a>
@@ -33,6 +36,7 @@ const Navbar = () => {
                 <a href="/"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Home</li></a><hr />
                 <a href="/about"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>About</li></a><hr />
                 <a href="/skills"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Skills</li></a><hr />
+                <a href="/feedback"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Feedback</li></a>
                 <a href="/contact"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Contact</li></a>
             </ul>
         </div>
