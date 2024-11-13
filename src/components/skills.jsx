@@ -33,7 +33,23 @@ const skills = () => {
     <img src="https://skillicons.dev/icons?i=selenium" alt="selenium" style={{ width: 45, height: 45 }} className='inline md:pb-4 mr-2'/>
     <img src="https://skillicons.dev/icons?i=vscode" alt="vscode" style={{ width: 45, height: 45 }} className='inline md:pb-3 mr-2'/>
     <img src="https://skillicons.dev/icons?i=github" alt="github" style={{ width: 45, height: 45 }} className='inline md:pb-3 mr-2'/>
-</div>
+    <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Figma</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Microsoft Azure</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Visual Studio 2022</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Selenium WebDriver</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Microsoft Visual Studio Code</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>GitHub</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>MobileIron</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Putty</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Filezilla</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>SQL Server Management Studio</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>TeamViewer</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>StarUML</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>VMware vSphere</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Cisco-Technologien</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>Trello</p>
+        <p className='md:font-semibold font-bold inline md:pb-3 mr-2'>RStudio</p>
+    </div>
 
 <div>
     <h1 className='md:font-semibold font-bold md:text-2xl md:pt-2 md:inline-block md:mr-5 md:mb-0 mb-1'>Databases and Data Tools</h1>

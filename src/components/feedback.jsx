@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { LuPhone } from 'react-icons/lu';
-import emailjs from '@emailjs/browser';
+import { database } from '../configuration';
+import { ref, set, onValue } from "firebase/database";
+import { v4 as uuidv4 } from 'uuid';
+ 
 
 const Feedback = () => {
   const [name, setName] = useState('');
@@ -9,32 +12,44 @@ const Feedback = () => {
   const [message, setMessage] = useState('');
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(null);
+  const [ratingsfromdb, setRatingsfromdb] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const SERVICE_ID = "service_oq66m6n";
-    const TEMPLATE_ID = "template_f5gjdxw";
-    const PUBLIC_KEY = "OYHgN6sohuNAqmCDY";
-
-    const templateParams = {
-      from_name: name,
-      from_email: email,
+  const feedbackid = uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+    set(ref(database, 'feedback/' + feedbackid), {
+      name: name,
+      email: email,
       message: message,
       rating: rating,
-    };
+      approved: false
 
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
-      .then((response) => {
-        console.log('Feedback sent successfully!', response);
-        setName('');
-        setEmail('');
-        setMessage('');
-        setRating(0);
-      })
-      .catch((error) => {
-        console.error('Error sending feedback:', error);
-      });
+    }).then(()=>{});
+
   };
+
+  useEffect(() => {
+    const starCountRef = ref(database, 'feedback/');
+    const unsubscribe = onValue(starCountRef, (snapshot) => {
+      const data = snapshot.val();
+      const approvedFeedback = [];
+      if (data) {
+        Object.values(data).forEach((feedback) => { 
+          if (feedback.approved) { 
+            approvedFeedback.push(feedback);
+          } 
+        });
+      }
+      setRatingsfromdb(approvedFeedback);
+    });
+
+    // Clean up the listener
+    return () => unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    console.log(ratingsfromdb)
+      }, [ratingsfromdb]);
 
   return (
     <div className='md:p-0 md:pt-24 md:px-40 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] p-8 md:mt-0 mt-6 pt-16'>

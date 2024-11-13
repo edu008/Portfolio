@@ -20,7 +20,7 @@ const about = () => {
 
         {/* Video Section */}
         <div className='md:mt-8 mt-6'>
-          <h2 className='text-2xl font-poppins font-medium'>My Introduction Video</h2>
+          <h2 className='text-2xl font-poppins font-medium'>My Introduction Video (in progress)</h2>
           <video className='md:w-full w-11/12 mt-4' controls>
             <source src="path/to/your-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -42,10 +42,19 @@ const about = () => {
           <hr className='md:w-64 w-32 md:mb-0 mb-4 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
           <h1 className='md:mt-4 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Swiss</span></h1>
         </div>
-        <div className='md:mt-4'>
-          <h1 className='text-3xl font-poppins font-medium md:ml-10 md:mt-0 mt-5'>Hobbies</h1>
-          <hr className='md:w-64 w-32 md:mb-0 mb-4 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
-          <h1 className='md:mt-5 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-3 text-xl pl-4'>Project <span>Building</span></span><br className='md:hidden'/><GoDot className='md:inline md:ml-4  inline'/><span className='md:pl-4 text-xl md-inline inline md:ml-0 ml-4'>Coding</span></h1>
+        <div className='md:w-96'>
+          <h1 className='text-3xl font-poppins font-medium md:ml-10'>Hobbies</h1>
+          <hr className='md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
+          <h1 className='md:mt-5 mt-3 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12  text-xl pl-4'>Gym</span></h1>
+          <h1 className='md:mt-2 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Gaming</span></h1>
+          <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Going out with Friends</span></h1>
+          <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Programming</span></h1>
+        </div>
+        <div className='md:w-96'>
+          <h1 className='text-3xl font-poppins font-medium md:ml-10'>Communties</h1>
+          <hr className='md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
+          <h1 className='md:mt-5 mt-3 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12  text-xl pl-4'>Mensa, The High IQ Society</span></h1>
+          <h1 className='md:mt-2 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Swiss Albanian Network</span></h1>
         </div>
       </div>
     </div>
