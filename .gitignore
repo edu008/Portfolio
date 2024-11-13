@@ -64,3 +64,7 @@ Thumbs.db
 
 # TypeScript cache
 *.tsbuildinfo
+
+#src
+
+./src/configuration.jsx
