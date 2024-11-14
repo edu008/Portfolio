@@ -61,7 +61,7 @@ const Feedback = () => {
       {/* Feedback Form */}
       <div className='md:w-28 md:h-7 rounded-full w-20 h-5 bg-black md:px-1 space-x-3.5 mb-6'>
           <LuHeart className='md:inline-block text-white font-semibold relative md:left-1.5 hidden scale-50 md:scale-100' size={22}/>
-          <span className='text-white font-poppins text-xs md:text-xs font-normal md:font-medium relative md:-left-0 md:-top-0 -top-1 md:pb-0 pb-2 md:pt-0'>Review</span>
+          <span className='text-white font-poppins text-xs md:text-xs font-normal md:font-medium relative md:-left-0 -left-0 md:-top-0 -top-1 md:pb-0 pb-2 md:pt-0'>Review</span>
         </div>
       <div className='md:mb-0 relative md:-top-4'>
         <h1 className='md:text-4xl md:font-semibold font-semibold text-4xl'><span className='bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent'>Leave</span> Feedback</h1>
