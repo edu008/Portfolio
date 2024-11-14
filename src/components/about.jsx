@@ -28,35 +28,54 @@ const about = () => {
         </div>
       </div>
       
-      <div className='relative md:-left-0 -left-28 md:pt-4 pt-12'>
-        <div className='md:w-96'>
-          <h1 className='text-3xl font-poppins font-medium md:ml-10'>Languages</h1>
-          <hr className='md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
-          <h1 className='md:mt-5 mt-3 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12  text-xl pl-4'>English</span></h1>
-          <h1 className='md:mt-2 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>German</span></h1>
-          <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Albanian</span></h1>
-          <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>French</span></h1>
-        </div>
-        <div className='md:mt-3'>
-          <h1 className='text-3xl font-poppins font-medium md:ml-10 md:mt-0 mt-5'>Nationality</h1>
-          <hr className='md:w-64 w-32 md:mb-0 mb-4 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
-          <h1 className='md:mt-4 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Swiss</span></h1>
-        </div>
-        <div className='md:w-96'>
-          <h1 className='text-3xl font-poppins font-medium md:ml-10'>Hobbies</h1>
-          <hr className='md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
-          <h1 className='md:mt-5 mt-3 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12  text-xl pl-4'>Gym</span></h1>
-          <h1 className='md:mt-2 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Gaming</span></h1>
-          <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Going out with Friends</span></h1>
-          <h1 className='md:mt-2 md:ml-2 font-poppins mb-2'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Programming</span></h1>
-        </div>
-        <div className='md:w-96'>
-          <h1 className='text-3xl font-poppins font-medium md:ml-10'>Communties</h1>
-          <hr className='md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 lg:mt-1 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
-          <h1 className='md:mt-5 mt-3 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12  text-xl pl-4'>Mensa, The High IQ Society</span></h1>
-          <h1 className='md:mt-2 md:ml-2 font-poppins'><GoDot className='inline'/><span className='md:pl-12 text-xl pl-4'>Swiss Albanian Network</span></h1>
-        </div>
-      </div>
+      <div className="relative md:-left-0 -left-28 md:pt-4 pt-12 space-y-10 md:space-y-8">
+  {/* Languages Section */}
+  <div className="md:w-96 space-y-3">
+    <h1 className="text-3xl font-poppins font-medium md:ml-10">Languages</h1>
+    <hr className="md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
+    {["English", "German", "Albanian", "French"].map((language, index) => (
+      <h1 key={index} className="md:mt-2 md:ml-2 font-poppins">
+        <GoDot className="inline" />
+        <span className="md:pl-12 text-xl pl-4">{language}</span>
+      </h1>
+    ))}
+  </div>
+
+  {/* Nationality Section */}
+  <div className="md:w-96 space-y-3">
+    <h1 className="text-3xl font-poppins font-medium md:ml-10">Nationality</h1>
+    <hr className="md:w-64 w-32 md:mb-0 mb-4 md:h-1 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
+    <h1 className="md:mt-4 md:ml-2 font-poppins">
+      <GoDot className="inline" />
+      <span className="md:pl-12 text-xl pl-4">Swiss</span>
+    </h1>
+  </div>
+
+  {/* Hobbies Section */}
+  <div className="md:w-96 space-y-3">
+    <h1 className="text-3xl font-poppins font-medium md:ml-10">Hobbies</h1>
+    <hr className="md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
+    {["Gym", "Gaming", "Going out with Friends", "Programming"].map((hobby, index) => (
+      <h1 key={index} className="md:mt-2 md:ml-2 font-poppins">
+        <GoDot className="inline" />
+        <span className="md:pl-12 text-xl pl-4">{hobby}</span>
+      </h1>
+    ))}
+  </div>
+
+  {/* Communities Section */}
+  <div className="md:w-96 space-y-3">
+    <h1 className="text-3xl font-poppins font-medium md:ml-10">Communities</h1>
+    <hr className="md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
+    {["Mensa, The High IQ Society", "Swiss Albanian Network"].map((community, index) => (
+      <h1 key={index} className="md:mt-2 md:ml-2 font-poppins">
+        <GoDot className="inline" />
+        <span className="md:pl-12 text-xl pl-4">{community}</span>
+      </h1>
+    ))}
+  </div>
+</div>
+
     </div>
   )
 }
