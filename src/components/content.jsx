@@ -20,7 +20,7 @@ const content = () => {
         <hr className='md:w-24 w-20 md:mb-0 mb-4 h-3 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
       </div>
       <div className='text-[rgb(15,23,42)] text-center'>
-         <h1 className='text-left md:pt-8 text-2xl font-poppins font-normal'>I am a Passionate 
+         <h1 className='text-left md:pt-8 text-2xl font-poppins font-normal'>I am a passionate 
             <span className='text-left md:pt-8 text-3xl font-semibold font-rubix'> IT <br></br> enthusiast.</span>
          </h1>
       </div>
