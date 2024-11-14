@@ -31,15 +31,21 @@ const Navbar = () => {
         <div className='md:invisible inline-block absolute -top-6 rounded-full ml-1.5 hover:bg-[#c580f04e] active:bg-[#c271f49f] duration-300 transition-all' onClick={handleNav}>
             <Hamburger color='#5521c595'/>
         </div>
-        <div className={!nav ? 'md:hidden font-poppins bg-gradient-to-r from-[#833be7e7] rounded-r-xl to-[#5521c595] w-44 h-56 -translate-x-44 absolute mt-10 px-5 text-center text-white  transition-all duration-300 z-30': 'z-30 md:hidden font-poppins bg-gradient-to-r from-[#833be7e7] rounded-r-xl to-[#5521c595] w-44 h-56 absolute mt-10 px-5 text-center text-white  transition-all duration-300'}>
-            <ul className=''>
-                <a href="/"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Home</li></a><hr />
-                <a href="/about"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>About</li></a><hr />
-                <a href="/skills"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Skills</li></a><hr />
-                <a href="/feedback"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Feedback</li></a>
-                <a href="/contact"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Contact</li></a>
-            </ul>
-        </div>
+        <div className={`md:hidden font-poppins bg-gradient-to-r from-[#833be7e7] rounded-r-xl to-[#5521c595] w-44 h-auto absolute mt-10 px-5 text-center text-white transition-all duration-300 ${nav ? 'translate-x-0' : '-translate-x-44'} z-30`}>
+    <ul className=''>
+        <a href="/"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Home</li></a>
+        <hr style={{ width: '90%', margin: '10px auto', borderTop: '2px solid #fff' }} />
+        <a href="/about"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>About</li></a>
+        <hr style={{ width: '90%', margin: '10px auto', borderTop: '2px solid #fff' }} />
+        <a href="/skills"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Skills</li></a>
+        <hr style={{ width: '90%', margin: '10px auto', borderTop: '2px solid #fff' }} />
+        <a href="/feedback"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Feedback</li></a>
+        <hr style={{ width: '90%', margin: '10px auto', borderTop: '2px solid #fff' }} />
+        <a href="/contact"><li className='p-4 font-semibold text-md hover:scale-125 active:scale-75 hover:translate-y-px transition-all duration-300 ease-in-out'>Contact</li></a>
+    </ul>
+</div>
+
+
         
       </div>
     )

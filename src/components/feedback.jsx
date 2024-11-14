@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { FaStar } from 'react-icons/fa';
-import { LuPhone } from 'react-icons/lu';
+import { LuHeart } from 'react-icons/lu';
 import { database } from '../configuration';
 import { ref, set, onValue } from "firebase/database";
 import { v4 as uuidv4 } from 'uuid';
- 
 
 const Feedback = () => {
   const [name, setName] = useState('');
@@ -16,16 +15,26 @@ const Feedback = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  const feedbackid = uuidv4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+    const feedbackid = uuidv4();
+
     set(ref(database, 'feedback/' + feedbackid), {
       name: name,
       email: email,
       message: message,
       rating: rating,
       approved: false
+    }).then(() => {
+      // Reset form fields
+      setName('');
+      setEmail('');
+      setMessage('');
+      setRating(0);
 
-    }).then(()=>{});
-
+      // Refresh the page
+      window.location.reload();
+    }).catch((error) => {
+      console.error("Error submitting feedback:", error);
+    });
   };
 
   useEffect(() => {
@@ -47,15 +56,12 @@ const Feedback = () => {
     return () => unsubscribe();
   }, []);
 
-  useEffect(() => {
-    console.log(ratingsfromdb)
-      }, [ratingsfromdb]);
-
   return (
-    <div className='md:p-0 md:pt-24 md:px-40 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] p-8 md:mt-0 mt-6 pt-16'>
+    <div className='feedback-container md:p-0 md:pt-24 md:px-40 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] p-8 md:mt-0 mt-6 pt-16'>
+      {/* Feedback Form */}
       <div className='md:w-28 md:h-7 rounded-full w-16 h-5 bg-black md:px-2 space-x-5 mb-6 md:mt-0 md:pt-0 relative lg:top-0 md:top-2 top-0'>
-        <LuPhone className='md:inline-block text-white font-semibold relative md:left-1.5 hidden scale-50 md:scale-100 md:-top-px' size={20}/>
-        <span className='text-white font-poppins text-xs md:text-xs font-normal md:font-medium relative md:-left-0 -left-3 md:-top-0 -top-1 md:pb-0 '>Feedback</span>
+        <LuHeart className='md:inline-block text-white font-semibold relative md:left-1.5 hidden scale-50 md:scale-100 md:-top-px' size={20}/>
+        <span className='text-white font-poppins text-xs md:text-xs font-normal md:font-medium relative md:-left-0 -left-3 md:-top-0 -top-1 md:pb-0 '>Review</span>
       </div>
       <div className='md:mb-0 relative md:-top-4'>
         <h1 className='md:text-4xl md:font-semibold font-semibold text-4xl'><span className='bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent'>Leave</span> Feedback</h1>
@@ -120,6 +126,31 @@ const Feedback = () => {
               Submit
             </button>
           </form>
+        </div>
+      </div>
+
+{/* Display Feedback from Database */}
+<div className='feedback-display mt-8 w-full mb-8 flex flex-col items-center' style={{ paddingBottom: '50px' }}>
+  <h2 className='text-3xl font-bold mb-6'>
+    <span className='bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent'>User</span> Feedback
+  </h2>
+  <div className='feedback-cards flex flex-wrap gap-4 justify-center'>
+    {ratingsfromdb.map((feedback, index) => (
+      <div
+        key={index}
+        className='feedback-card p-4 border rounded-lg w-60 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-white'
+      >
+        <h3 className='font-bold'>{feedback.name}</h3>
+        <p className='text-sm text-gray-600' style={{ wordWrap: 'break-word', overflowWrap: 'break-word' }}>
+          {feedback.message}
+        </p>
+        <div className='flex space-x-1 mt-2'>
+          {[...Array(feedback.rating)].map((_, i) => (
+            <FaStar key={i} size={20} color='#ffc107' />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

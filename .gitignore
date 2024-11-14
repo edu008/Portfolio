@@ -68,3 +68,10 @@ Thumbs.db
 #src
 
 ./src/configuration.jsx
+
+#firebase
+.firebase
+
+#github
+
+.github
