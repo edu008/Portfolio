@@ -2,7 +2,7 @@ import React from 'react';
 import { LuHome, LuUser, LuLightbulb, LuLayers, LuPhone, LuLanguages } from "react-icons/lu";
 import { GoDot } from "react-icons/go";
 
-const about = () => {
+const About = () => {
   return (
     <div className='md:p-22 md:pt-24 md:pb-22 md:px-40 md:h-full select-none bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] p-8 md:flex justify-normal space-x-28 md:mt-0 mt-6 pt-16'>
       <div className='md:w-6/12'>
@@ -28,55 +28,56 @@ const about = () => {
         </div>
       </div>
       
-      <div className="relative md:-left-0 -left-28 md:pt-4 pt-12 space-y-10 md:space-y-8">
-  {/* Languages Section */}
-  <div className="md:w-96 space-y-3">
-    <h1 className="text-3xl font-poppins font-medium md:ml-10">Languages</h1>
-    <hr className="md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
+      <div className='relative md:-left-0 -left-28 p-8'>
+  <div className='md:w-96 mb-8'>
+    <h1 className='text-3xl md:text-2xl sm:text-xl font-poppins font-medium md:ml-10'>
+      <LuLanguages className='inline mr-2 hidden sm:inline' />Languages
+    </h1>
+    <hr className='md:w-64 w-32 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
     {["English", "German", "Albanian", "French"].map((language, index) => (
-      <h1 key={index} className="md:mt-2 md:ml-2 font-poppins">
-        <GoDot className="inline" />
-        <span className="md:pl-12 text-xl pl-4">{language}</span>
+      <h1 key={index} className='mt-4 md:ml-2 font-poppins flex items-center'>
+        <GoDot className='inline mr-2 text-lg hidden sm:inline' /><span className='md:pl-12 text-xl md:text-lg sm:text-base'>{language}</span>
       </h1>
     ))}
   </div>
 
-  {/* Nationality Section */}
-  <div className="md:w-96 space-y-3">
-    <h1 className="text-3xl font-poppins font-medium md:ml-10">Nationality</h1>
-    <hr className="md:w-64 w-32 md:mb-0 mb-4 md:h-1 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
-    <h1 className="md:mt-4 md:ml-2 font-poppins">
-      <GoDot className="inline" />
-      <span className="md:pl-12 text-xl pl-4">Swiss</span>
+  <div className='md:w-96 mb-8'>
+    <h1 className='text-3xl md:text-2xl sm:text-xl font-poppins font-medium md:ml-10'>
+      <LuHome className='inline mr-2 hidden sm:inline' />Nationality
+    </h1>
+    <hr className='md:w-64 w-32 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
+    <h1 className='mt-4 md:ml-2 font-poppins flex items-center'>
+      <GoDot className='inline mr-2 text-lg hidden sm:inline' /><span className='md:pl-12 text-xl md:text-lg sm:text-base'>Swiss</span>
     </h1>
   </div>
 
-  {/* Hobbies Section */}
-  <div className="md:w-96 space-y-3">
-    <h1 className="text-3xl font-poppins font-medium md:ml-10">Hobbies</h1>
-    <hr className="md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
-    {["Gym", "Gaming", "Going out with Friends", "Programming"].map((hobby, index) => (
-      <h1 key={index} className="md:mt-2 md:ml-2 font-poppins">
-        <GoDot className="inline" />
-        <span className="md:pl-12 text-xl pl-4">{hobby}</span>
+  <div className='md:w-96 mb-8'>
+    <h1 className='text-3xl md:text-2xl sm:text-xl font-poppins font-medium md:ml-10'>
+      <LuLightbulb className='inline mr-2 hidden sm:inline' />Hobbies
+    </h1>
+    <hr className='md:w-64 w-32 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
+    {["Gym", "Gaming", "Hiking", "Programming"].map((hobby, index) => (
+      <h1 key={index} className='mt-4 md:ml-2 font-poppins flex items-center'>
+        <GoDot className='inline mr-2 text-lg hidden sm:inline' /><span className='md:pl-12 text-xl md:text-lg sm:text-base'>{hobby}</span>
       </h1>
     ))}
   </div>
 
-  {/* Communities Section */}
-  <div className="md:w-96 space-y-3">
-    <h1 className="text-3xl font-poppins font-medium md:ml-10">Communities</h1>
-    <hr className="md:w-64 w-32 md:mb-0 mb-2 md:h-1 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]" />
+  <div className='md:w-96 mb-8'>
+    <h1 className='text-3xl md:text-2xl sm:text-xl font-poppins font-medium md:ml-10'>
+      <LuLayers className='inline mr-2 hidden sm:inline' />Communities
+    </h1>
+    <hr className='md:w-64 w-32 h-1 mt-3 md:ml-10 bg-gradient-to-r from-[#c580f0ed] to-[#c580f0c8]'></hr>
     {["Mensa, The High IQ Society", "Swiss Albanian Network"].map((community, index) => (
-      <h1 key={index} className="md:mt-2 md:ml-2 font-poppins">
-        <GoDot className="inline" />
-        <span className="md:pl-12 text-xl pl-4">{community}</span>
+      <h1 key={index} className='mt-4 md:ml-2 font-poppins flex items-center'>
+        <GoDot className='inline mr-2 text-lg hidden sm:inline' /><span className='md:pl-12 text-xl md:text-lg sm:text-base'>{community}</span>
       </h1>
     ))}
   </div>
 </div>
 
+
     </div>
-  )
+  );
 }
-export default about;
+export default About;

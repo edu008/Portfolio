@@ -59,10 +59,10 @@ const Feedback = () => {
   return (
     <div className='feedback-container md:p-0 md:pt-24 md:px-40 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white] p-8 md:mt-0 mt-6 pt-16'>
       {/* Feedback Form */}
-      <div className='md:w-28 md:h-7 rounded-full w-16 h-5 bg-black md:px-2 space-x-5 mb-6 md:mt-0 md:pt-0 relative lg:top-0 md:top-2 top-0'>
-        <LuHeart className='md:inline-block text-white font-semibold relative md:left-1.5 hidden scale-50 md:scale-100 md:-top-px' size={20}/>
-        <span className='text-white font-poppins text-xs md:text-xs font-normal md:font-medium relative md:-left-0 -left-3 md:-top-0 -top-1 md:pb-0 '>Review</span>
-      </div>
+      <div className='md:w-28 md:h-7 rounded-full w-20 h-5 bg-black md:px-1 space-x-3.5 mb-6'>
+          <LuHeart className='md:inline-block text-white font-semibold relative md:left-1.5 hidden scale-50 md:scale-100' size={22}/>
+          <span className='text-white font-poppins text-xs md:text-xs font-normal md:font-medium relative md:-left-0 md:-top-0 -top-1 md:pb-0 pb-2 md:pt-0'>Review</span>
+        </div>
       <div className='md:mb-0 relative md:-top-4'>
         <h1 className='md:text-4xl md:font-semibold font-semibold text-4xl'><span className='bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent'>Leave</span> Feedback</h1>
         <hr className='md:w-40 w-32 md:mb-0 mb-4 h-2 mt-3 md:ml-0 lg:mt-2 bg-gradient-to-r from-[#bf77eced] to-[#c580f0c8]'/>
