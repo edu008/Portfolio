@@ -69,7 +69,7 @@ const Feedback = () => {
       </div>
       <div className='flex justify-center relative lg:-top-8'>
         <div className='p-4 border md:w-96 md:min-h-96 rounded-lg md:pt-5 md:pr-5 md:pl-5 md:pb-2 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] bg-[white]'>
-          <h1 className='md:font-medium md:text-2xl font-medium text-xl'>Send me your feedback.</h1>
+          <h1 className='md:font-medium md:text-2xl font-medium text-xl'>Send me your feedback</h1>
           <h1 className='text-sm text-[#64748be2] md:mt-1'>Once the form is submitted, the fields will be reset.</h1>
 
           <form className='md:mt-0 mt-4' onSubmit={handleSubmit}>

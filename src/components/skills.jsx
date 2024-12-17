@@ -95,7 +95,7 @@ const skills = () => {
 <div>
   <h1 className="font-poppins text-4xl font-medium">
     My <span className="bg-gradient-to-r from-[#833be7cb] to-[#5521c5] bg-clip-text text-transparent">Technical</span>
-    <br className="md:block hidden" /> Experience/<span className="md:hidden block"> </span>Skills.
+    <br className="md:block hidden" /> Experience/<span className="md:hidden block"> </span>Skills
   </h1>
   <hr className="md:w-44 w-32 md:mb-6 mb-6 h-3 mt-3 md:ml-0 lg:mt-4 bg-gradient-to-r from-[#bf77eced] to-[#c580f0c8]" />
 </div>
